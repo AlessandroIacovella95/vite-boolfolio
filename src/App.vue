@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <div class="container mt-4">
+  <div class="container my-4">
     <h1 class="mb-4">Boolfolio</h1>
     <ProjectList />
   </div>
