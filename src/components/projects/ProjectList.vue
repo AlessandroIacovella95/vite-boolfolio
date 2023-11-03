@@ -29,7 +29,7 @@ export default {
 
 <template>
   <h2 class="mb-4">Lista Progetti:</h2>
-  <div class="row row-cols-3 g-3">
+  <div class="row row-cols-3 g-4">
     <ProjectCard v-for="project in projects" :project="project" />
   </div>
 </template>
