@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 
-import HomePage from "../pages/HomePage";
-import BlogPage from "../pages/BlogPage";
+import HomePage from "../pages/HomePage.vue";
+import BlogPage from "../pages/BlogPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -14,7 +14,7 @@ const router = createRouter({
     },
 
     {
-      name: "blog ",
+      name: "blog",
       path: "/blog",
       component: BlogPage,
     },

@@ -1,6 +1,8 @@
 import { createApp } from "vue";
 import "./assets/scss/style.scss";
 
+import { router } from "./router";
+
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
 
