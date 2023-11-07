@@ -34,7 +34,11 @@ export default {
 <template>
   <h2 class="mb-4">Lista Progetti:</h2>
   <div class="row row-cols-3 g-4">
-    <ProjectCard v-for="project in projects" :project="project" />
+    <ProjectCard
+      v-for="project in projects"
+      :isDetail="false"
+      :project="project"
+    />
   </div>
   <nav
     class="mt-5 d-flex justify-content-end align-items-start"

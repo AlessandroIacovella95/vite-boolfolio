@@ -6,6 +6,7 @@ export default {
 
   props: {
     project: Object,
+    isDetail: Boolean,
   },
 };
 </script>
@@ -39,8 +40,15 @@ export default {
         <h4>{{ project.title }}</h4>
         <p>{{ project.description }}</p>
       </div>
-      <div class="card-footer">
+      <div class="card-footer d-flex justify-content-between align-items-start">
         <span>{{ project.url }}</span>
+        <router-link
+          v-if="!isDetail"
+          :to="{ name: 'project-detail', params: { id: project.id } }"
+          class="btn btn-primary"
+        >
+          Vedi
+        </router-link>
       </div>
     </div>
   </div>
