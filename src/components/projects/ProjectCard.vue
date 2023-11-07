@@ -44,7 +44,7 @@ export default {
         <span>{{ project.url }}</span>
         <router-link
           v-if="!isDetail"
-          :to="{ name: 'project-detail', params: { id: project.id } }"
+          :to="{ name: 'project-detail', params: { slug: project.slug } }"
           class="btn btn-primary"
         >
           Vedi

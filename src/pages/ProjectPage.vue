@@ -15,7 +15,7 @@ export default {
 
   created() {
     axios
-      .get(store.api.baseUrl + "projects/" + this.$route.params.id)
+      .get(store.api.baseUrl + "projects/" + this.$route.params.slug)
       .then((response) => {
         this.project = response.data;
       });
