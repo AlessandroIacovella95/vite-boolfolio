@@ -16,13 +16,15 @@ export default {
     <div class="card h-100">
       <div class="card-header d-flex justify-content-between align-items-start">
         <div class="me-3">
-          <span
+          <router-link
+            :to="{ name: 'blog-type', params: { type_id: project.type_id } }"
             class="badge"
             :style="{
               backgroundColor: project.type.color,
             }"
-            >{{ project.type.label }}</span
           >
+            {{ project.type.label }}
+          </router-link>
         </div>
 
         <div>
